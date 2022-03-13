@@ -1,0 +1,36 @@
+Funkcjonalność: 
+Stworzenie archiwum gromadzącego informacje z historii ligi na temat kategorii
+przedstawionych w encjach.
+
+Stworzenie przykładowych procedur, wyzwalaczy i zapytań operujących na strukturze projektu.
+
+Encje zawarte w bazie daych:
+Zawodnik(data urodzenia, Wzrost, imie,nazwisko,pozycja)
+Trener(data urodzenia,imie,nazwisko) 
+Mistrzostwo(rok)
+MVP(rok)
+Nazwa Hali(nazwa,od,do)
+Drużyna(data utworzenia,nazwa)
+Hala(pojemnosć, data otwarcia)
+
+tabele asocjacyjne:
+Drużyna-Zawodnik(od,do)
+Drużyna-Hala(od,do)
+Drużyna-Trener(od,do)
+
+Każdy zawodnik w  karierze był w co najmniej jednej drużynie.
+Każda drużyna ma na przestrzeni lat wielu zawodników.
+
+Każdy trener prowadził conajmniej jedną drużynie.
+Każda drużyna na przestrzeni lat miała wielu trenerów.
+
+Mistrzostwo w danym roku trafia tylko do jednej drużyny,
+ale drużyna moze miec wiele mistrzostw z różnych lat.
+
+Tytuł MVP w danym roku trafia tylko do jednego zawodnika,
+ale zawodnik moze miec wiele tytułów z różnych lat.
+
+Każda drużyna na przestrzeni lat miała conajmniej jedną halę.
+Każda hala na przestrzeni lat należała do conajmniej jednej drużyny.
+
+Każda Hala może zmieniać nazwy co jakiś okres czasu.
